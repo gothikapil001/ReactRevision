@@ -1,0 +1,23 @@
+{
+  "name": "1namstereact",
+  "version": "1.0.0",
+  "description": "Fully React Concept Revision",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gothikapil001/ReactRevision.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gothikapil001/ReactRevision/issues"
+  },
+  "homepage": "https://github.com/gothikapil001/ReactRevision#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
