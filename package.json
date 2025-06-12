@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Fully React Concept Revision",
   "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html --dist-dir dist/fivertical",
     "test": "jest"
   },
   "repository": {
@@ -22,5 +24,8 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
-  }
+  },
+  "browserList": [
+    "last 2 versions"
+  ]
 }

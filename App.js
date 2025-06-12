@@ -1,9 +1,49 @@
 import React from "react";
 // import ReactDOM from 'react-dom';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from "react-dom/client";
 
+// React Element
+const jsxHeading = (
+  <h1 className="head" tabIndex="3" id="heading">
+    Namste React Kapil
+  </h1>
+);
 
-//for javascript 
+console.log(jsxHeading);
+
+//React component Name start from capital letter [Title is component]
+const Title = () => (
+  <h1 className="head" tabIndex="3" id="heading">
+    This is Title Tag component
+  </h1>
+);
+
+//[title is Normal JS varable]
+const title = <h1>This is Title variable of js</h1>;
+
+const Number = 1000;
+
+// React functional component
+const HeadingComponent = () => (
+  <div id="container">
+    <Title />
+{/*  */}
+    <h4>{Number}</h4>
+
+    {title}
+
+    <h1 className="head" tabIndex="3">
+      This is Heading component
+    </h1>
+
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<HeadingComponent />);
+
+//for javascript
 // const heading1 = document.createElement("h1");
 // heading1.innerHTML = "Hello world by JS";
 // const root1 = document.getElementById("root1");
@@ -31,36 +71,35 @@ import ReactDOM from 'react-dom/client';
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(parent);
 
-
 // This for create first div dynamically
-const secondElement = document.createElement("Div");
-secondElement.id = 'NewDiv';
-document.body.appendChild(secondElement);
+// const secondElement = document.createElement("Div");
+// secondElement.id = 'NewDiv';
+// document.body.appendChild(secondElement);
 
-const ReactPracticeTag = [
-    React.createElement("div", { id: 'parent1' },
-        [
-            React.createElement("div", { id: 'child1' },
-                [
-                    React.createElement("h5", {}, "Heading 1 for child 1 & Parent1  "),
-                    React.createElement("h4", {}, "Heading 2 for child 1 & Parent1 "),
-                ]
-            )
-        ]
-    ),
-    React.createElement("div", { id: 'parent2' },
-        [
-            React.createElement("div", { id: 'child1' },
-                [
-                    React.createElement("h5", {}, "Heading 1 for child 1 & Parent 2 "),
-                    React.createElement("h4", {}, "Heading 2 for child 1 & Parent 2 "),
-                ]
-            )
-        ]
-    )
+// const ReactPracticeTag = [
+//     React.createElement("div", { id: 'parent1' },
+//         [
+//             React.createElement("div", { id: 'child1' },
+//                 [
+//                     React.createElement("h5", {}, "Heading 1 for child 1 & Parent1  "),
+//                     React.createElement("h4", {}, "Heading 2 for child 1 & Parent1 "),
+//                 ]
+//             )
+//         ]
+//     ),
+//     React.createElement("div", { id: 'parent2' },
+//         [
+//             React.createElement("div", { id: 'child1' },
+//                 [
+//                     React.createElement("h5", {}, "Heading 1 for child 1 & Parent 2 "),
+//                     React.createElement("h4", {}, "Heading 2 for child 1 & Parent 2 "),
+//                 ]
+//             )
+//         ]
+//     )
 
-];
+// ];
 
-const rootElement = ReactDOM.createRoot(document.getElementById("NewDiv"));
+// const rootElement = ReactDOM.createRoot(document.getElementById("NewDiv"));
 
-rootElement.render(ReactPracticeTag);
+// rootElement.render(ReactPracticeTag);
